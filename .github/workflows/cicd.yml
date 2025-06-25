@@ -19,4 +19,4 @@ jobs:
    
     - name: List Files
       run: |
-       echo "Terry is teaching"
+       echo "This is a test message"
