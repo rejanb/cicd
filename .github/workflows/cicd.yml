@@ -52,5 +52,5 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          docker build -t ${{ secrets.USER }}/obj:${{github.sha}} .
-          docker push ${{ secrets.USER }}/obj:l${{github.sha}}
+          docker build -t ${{ secrets.USER }}/cicd:${{github.sha}} .
+          docker push ${{ secrets.USER }}/cicd:l${{github.sha}}
