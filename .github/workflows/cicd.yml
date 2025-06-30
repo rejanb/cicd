@@ -55,10 +55,6 @@ jobs:
           docker build -t ${{ secrets.USER }}/cicd:${{github.sha}} .
           docker push ${{ secrets.USER }}/cicd:${{github.sha}}
 
-      - name: Build and Push Docker Image
-        run: |
-          docker push ${{ secrets.USER }}/cicd:l${{github.sha}}
-
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v2
         with:
