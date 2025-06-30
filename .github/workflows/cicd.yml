@@ -59,6 +59,5 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: "cicdss"
-          slot-name: ${{ secrets.SLOT_NAME }}
           images: ${{ secrets.USER }}/cicd:${{github.sha}}
           publish-profile: ${{ secrets.AZURE }}
